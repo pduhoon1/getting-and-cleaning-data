@@ -2,7 +2,7 @@
 
 Prashant Duhoon
 
-##Final Project for John Hopkin's Getting and cleaning data as a part of its data science specialization.
+###Final Project for John Hopkin's Getting and cleaning data as a part of its data science specialization.
 
 ##Data Set
 
