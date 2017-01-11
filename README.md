@@ -6,8 +6,8 @@ Final Project for John Hopkin's Getting and cleaning data as a part of its data 
 Data Set
 
 The UCI Machine Learning Repository of data collected from the accelerometers from the Samsung Galaxy S smartphone.
-description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-dataset: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+- description: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+- dataset: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 Tasks:
 -Merges the training and the test sets to create one data set.
