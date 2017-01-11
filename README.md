@@ -1,6 +1,6 @@
 # Getting and Cleaning Data Final Project
 
-by: ###Prashant Duhoon
+;Prashant Duhoon
 
 ##Final Project for John Hopkin's Getting and cleaning data as a part of its data science specialization.
 
