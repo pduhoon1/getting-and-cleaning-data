@@ -23,28 +23,27 @@ For each record in the dataset it is provided:
 - Its activity label. 
 - An identifier of the subject who carried out the experiment.
 
-## Section 1. Merge the training and the test sets to create one data set.
-After setting the source directory for the files, read into tables the data located in
-- features.txt
-- activity_labels.txt
-- subject_train.txt
-- x_train.txt
-- y_train.txt
-- subject_test.txt
-- x_test.txt
-- y_test.txt
+## Q1. Merge the training and the test sets to create one data set.
+After setting the working directory for the files, read data from below files to respective variables:
+- features.txt to feat
+- activity_labels.txt to labels
+- subject_train.txt to sub_train
+- x_train.txt to x_train
+- y_train.txt to y_train
+- subject_test.txt to sub_test
+- x_test.txt to x_test
+- y_test.txt to y_test
+We use second column in feat to assign column names to both x_train and x_test.
+We also append y_train and sub_train to x_train and y_test and sub_test to x_test for Q3
 
-Assign column names and merge to create one data set.
+## Q2. Extract only the measurements on the mean and standard deviation for each measurement. 
+A logical vector (selcol) is created that contains TRUE values for the ID, mean and stdev columns and FALSE values for the others.
 
-## Section 2. Extract only the measurements on the mean and standard deviation for each measurement. 
-Create a logcal vector that contains TRUE values for the ID, mean and stdev columns and FALSE values for the others.
-Subset this data to keep only the necessary columns.
+## Q3. Use descriptive activity names to name the activities in the data set
+Merge data subset with the activityType table to include the activity names
 
-## Section 3. Use descriptive activity names to name the activities in the data set
-Merge data subset with the activityType table to cinlude the descriptive activity names
+## Q4. Appropriately label the data set with descriptive activity names.
+Used gsub function for pattern replacement to clean up the data labels.
 
-## Section 4. Appropriately label the data set with descriptive activity names.
-Use gsub function for pattern replacement to clean up the data labels.
-
-## Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
-Per the project instructions, we need to produce only a data set with the average of each veriable for each activity and subject
+## Q5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
+We have produced only a data set with the average of each veriable for each activity and subject
